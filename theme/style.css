@@ -1,0 +1,418 @@
+/*
+Theme Name:         Materialogic Base Theme
+Theme URI:          TBD Ml Wiki
+Description:        This is a versatile HTML5 responsive WordPress framework based on ZURB's Foundation.
+Version:            1.0.0
+Author:             the Materialogic development team
+Author URI:         http://materialogic.com
+*/
+
+/* -------------------------------------------------- 
+
+	This stylesheet is loaded in the front end by default.
+	
+	If you are using Sass, the main stylesheet in
+	css/style.css and scss/style.scss. Style.scss has
+	already loaded the main Foundation Sass and Normalize.
+	
+	If you wish to enable SCSS support, go to functions.php 
+  line 23 and follow the instructions.
+
+-------------------------------------------------- */
+
+/* Start to customize here. */
+header.row,
+.container.row,
+.row.full-width {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+h4.subheader, ol.commentlist cite.subheader.fn {
+  margin-top: -1em;
+}
+
+.page-numbers {
+  display: block;
+  height: 1.5em;
+  margin-left: -0.3125em;
+}
+.page-numbers li {
+  display: block;
+  float: left;
+  height: 1.5em;
+  color: #222222;
+  font-size: 0.875em;
+  margin-left: 0.3125em;
+}
+.page-numbers li a {
+  display: block;
+  padding: 0.0625em 0.4375em 0.0625em;
+  color: #999999;
+}
+.page-numbers li:hover a,
+.page-numbers li a:focus {
+  background: #e6e6e6;
+}
+.page-numbers li.unavailable a {
+  cursor: default;
+  color: #999999;
+}
+.page-numbers li.unavailable:hover a, .page-numbers li.unavailable a:focus {
+  background: transparent;
+}
+.page-numbers li.current a {
+  background: #2ba6cb;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+.page-numbers li.current a:hover, .page-numbers li.current a:focus {
+  background: #2ba6cb;
+}
+
+.page-numbers li span:hover a,
+.page-numbers li span a:focus {
+  background: #e6e6e6;
+}
+.page-numbers li span.current {
+  background: #2ba6cb;
+  padding: 0.0625em 0.4375em 0.0625em;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+ol.commentlist {
+  margin-left: 0;
+  margin-top: 2em;
+}
+ol.commentlist li {
+  list-style: none;
+  margin-bottom: 2em;
+}
+ol.commentlist .comment-author img {
+  border-radius: 50%;
+  float: left;
+  margin: 0 1em 0 0;
+}
+ol.commentlist .author-meta {
+  display: inline-block;
+}
+ol.commentlist cite.fn {
+  margin-right: 0.5em;
+}
+ol.commentlist section.comment {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  margin-bottom: 1.25em;
+  padding: 20px;
+  background: white;
+}
+ol.commentlist section.comment h1, ol.commentlist section.comment h2, ol.commentlist section.comment h3, ol.commentlist section.comment h4, ol.commentlist section.comment cite.fn, ol.commentlist section.comment h5, ol.commentlist section.comment h6, ol.commentlist section.comment p {
+  color: #333333;
+}
+ol.commentlist section.comment > :first-child {
+  margin-top: 0;
+}
+ol.commentlist section.comment > :last-child {
+  margin-bottom: 0;
+}
+ol.commentlist section.comment h1, ol.commentlist section.comment h2, ol.commentlist section.comment h3, ol.commentlist section.comment h4, ol.commentlist section.comment cite.fn, ol.commentlist section.comment h5, ol.commentlist section.comment h6 {
+  line-height: 1;
+  margin-bottom: 0.625em;
+}
+ol.commentlist section.comment h1.subheader, ol.commentlist section.comment h2.subheader, ol.commentlist section.comment h3.subheader, ol.commentlist section.comment h4.subheader, ol.commentlist section.comment cite.subheader.fn, ol.commentlist section.comment h5.subheader, ol.commentlist section.comment h6.subheader {
+  line-height: 1.4;
+}
+ol.commentlist a.comment-reply-link {
+  float: right;
+  position: relative;
+  bottom: 1em;
+}
+
+ul {
+  margin-left: 1.25em;
+}
+
+figure {
+  margin-bottom: 1.25em;
+}
+
+input.prefix.button {
+  line-height: 1;
+}
+
+#sidebar input.prefix.button {
+  line-height: 0.7;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+img.aligncenter {
+  display: block;
+  margin: 18px auto;
+}
+
+figure.figure {
+  margin: 0 auto;
+  display: inline-block;
+}
+figure.figure figcaption {
+  padding: 8px 10px;
+  color: gray;
+  margin-bottom: 1.25em;
+}
+
+figure.alignright.figure {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+figure.alignleft.figure {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+
+/*--------------------------
+PAGE
+--------------------------*/
+::selection {
+  color:#ffffff;
+  background: #fb9930; /* Safari */
+  }
+::-moz-selection {
+  color:#ffffff;
+  background: #fb9930; /* Firefox */
+}
+
+/*--------------------------
+HEADER
+--------------------------*/
+.title-area { top:21%; }
+.top-bar-section { top:38%; }
+
+.login-top { 
+  position:absolute; 
+  right:0;
+  background: #fb9930;
+  padding:0 25px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  line-height:35px;
+}
+.login-lock { position:relative; top:2px; }
+.login-top:hover { 
+  background: #fcb54f; 
+}
+.login-top a { color:#ffffff; text-transform: uppercase; font-size: 0.875em; font-weight:400; }
+
+/*--------------------------
+HERO
+--------------------------*/
+
+.hero-wrapper { background:url("img/hero-bg.png") repeat scroll center center transparent;}
+
+.hero-slide { text-align: center; margin:60px 0 50px 0; color:#ffffff; }
+.hero-slide span { display:block; font-size:1.250em; }
+.hero-slide span.hero-headline { font-size:3.625em; font-weight:700; margin:30px 0 5px 0; }
+.hero-slide span.hero-subhead { font-size:2.625em; font-weight:400; margin-bottom:30px; }
+.hero-slide span.hero-copy { width:500px; margin: 0 auto; margin-bottom:30px; line-height:1.500em; }
+
+.hero-page { text-align: center; margin:30px 0; color:#ffffff; }
+.hero-page span { display:block; font-size:1.250em; }
+.hero-page span.hero-headline { font-size:2.625em; font-weight:700; margin:30px 0 5px 0; }
+.hero-page span.hero-subhead { font-size:1.625em; font-weight:400; margin-bottom:30px; }
+.hero-page span.hero-copy { width:500px; margin: 0 auto; margin-bottom:30px; line-height:1.500em; }
+
+/*--------------------------
+HIGHLIGHTS
+--------------------------*/
+
+.our-services-highlights { margin:60px 0 60px 0; }
+.our-services-highlights span, .our-company-highlights span { display:block; text-align:center; }
+span.highlights-headline { font-size:1.500em; font-weight:700; margin:30px 0 5px 0; }
+span.highlights-subhead { font-size:1.250em; font-weight:400; margin-bottom:30px; }
+
+.odd-row { background-color:#e6eff6; }
+.even-row { background-color:#ffffff; }
+.section-headline.left-align { text-align:left; font-weight:700; }
+.our-company-highlights { margin:60px 0 35px 0; }
+
+.horizontal-cta-wrapper { background-color:#517dbc; }
+.cta { margin:55px 0 35px; height: 65px; }
+.cta .headline { font-size:2.0em; color:#ffffff; margin:10px 10px 0 0; float:left; height:40px;}
+
+
+/*--------------------------
+FOOTER
+--------------------------*/
+
+.footer-wrapper { background-color:#3e454c; padding:30px 0 0 0; }
+.footer-wrapper .inline-list > li { float: none; font-size:0.875em; margin-left:1.5em; margin-bottom:10px; }
+.footer-wrapper .inline-list > li a { color:#ffffff; }
+.footer-wrapper .inline-list > li a:hover { color:#51c2a2; text-decoration:underline; }
+
+.footer-headline { float:left; display:block; margin:0 0 0.5em -0.1em; overflow:hidden; width:100%; color:#ffffff; font-size:1.125em; font-weight:700; line-height:2; }
+
+.inline-list.footer { line-height:1.3; }
+
+.menu-item.twitter a, .menu-item.facebook a, .menu-item.google a, .menu-item.linkedin a, .menu-item.newsfeed a { color:#0098aa; text-decoration: none; padding-left:36px; padding-top:4px; height:25px; }
+
+.menu-item.twitter a { background: url('img/twitter.png') left center no-repeat transparent }
+.menu-item.twitter a:hover { background: url('img/twitter-hover.png') left center no-repeat transparent }
+
+.menu-item.facebook a { background: url('img/facebook.png') left center no-repeat transparent }
+.menu-item.facebook a:hover { background: url('img/facebook-hover.png') left center no-repeat transparent }
+
+.menu-item.google a { background: url('img/google.png') left center no-repeat transparent }
+.menu-item.google a:hover { background: url('img/google-hover.png') left center no-repeat transparent }
+
+.menu-item.linkedin a { background: url('img/linkedin.png') left center no-repeat transparent }
+.menu-item.linkedin a:hover { background: url('img/linkedin-hover.png') left center no-repeat transparent }
+
+.menu-item.newsfeed a { background: url('img/rss.png') left center no-repeat transparent }
+.menu-item.newsfeed a:hover { background: url('img/rss-hover.png') left center no-repeat transparent }
+
+.copyright-footer { padding:20px 0; color:#ffffff; display:block; font-size:0.750em; color:#cccccc; border-top:1px solid #CCCCCC }
+.row.offset-left { margin-left:5px; }
+.social-trunc { display:inline; }
+
+/*--------------------------
+PAGE CONTENT
+--------------------------*/
+.row.page-content { margin-top:60px; margin-bottom:40px; }
+.page-content h1 { font-size: 2.25em; margin-top:0; }
+.inline-list.sidebar-menu { background-color:#3E454C; }
+.inline-list.sidebar-menu a { color:#ffffff; padding :20px; background:url("img/lock.png") no-repeat scroll 14px 14px #3E454C; padding:15px 25px 14px 42px; font-size:0.75em; }
+.inline-list.sidebar-menu li.active a { background-color:#FF8400; }
+.inline-list.sidebar-menu li.active a:hover { background-color:#faa819; }
+.inline-list.sidebar-menu li.active a:after { width:0; height:0; border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:8px solid #ffffff; content:''; display:block; float:right; position:relative; right:-12px; }
+.inline-list.sidebar-menu li a:hover { background-color:#faa819; }
+.inline-list.sidebar-menu li { float:left; width:100%; margin:0; line-height:1.3; font-size:1.00em; } 
+
+.content.headline { font-size: 1.65em; line-height:1.2; }
+.hero-page .services-image { margin-top:10px; width:500px; height:120px }
+
+dt.service1 { background: url("img/lock-color.png") no-repeat scroll 0 4px transparent; padding-left:30px; }
+dt.service2 { background: url("img/lock-color.png") no-repeat scroll 0 4px transparent; padding-left:30px; }
+dt.service3 { background: url("img/lock-color.png") no-repeat scroll 0 4px transparent; padding-left:30px; }
+dt.service4 { background: url("img/lock-color.png") no-repeat scroll 0 4px transparent; padding-left:30px; }
+dt.service5 { background: url("img/lock-color.png") no-repeat scroll 0 4px transparent; padding-left:30px; }
+
+
+/* Sidebar Navigation */
+
+
+@media only screen and (max-width: 1020px) {
+  .cta .headline { font-size:1.75em; }
+}
+
+@media only screen and (max-width: 980px) {
+  .login-top { display:none; }
+  .top-bar { margin-bottom:0; }
+  .hero-slide span.hero-headline { font-size:2.375em; }
+  .hero-slide span.hero-subhead { font-size:1.750em; }
+  .hero-slide span.hero-copy { font-size:1.000em }
+  .cta .headline { font-size:1.60em; margin:11px 10px 0 0;  }
+  .social-trunc { display:none; }  
+
+  .hero-page span.hero-headline { font-size:2.25em; margin:0; margin-top:30px;margin-bottom:5px; }
+  .hero-page span.hero-subhead { font-size:1.50em; margin:0; }
+  .hero-page .services-image { margin-top:10px; width:auto; height:auto; min-height:105px; }
+
+
+}
+
+@media only screen and (max-width: 870px) {
+  .cta .headline { font-size:1.50em; margin:11px 10px 0 0; }
+}
+
+@media only screen and (max-width: 850px) {
+  .horizontal-cta-wrapper { background-color:#ffffff; }
+  .cta .headline { font-size:1.75em; display:block; height:100%; margin-bottom:3px; float:none; text-align:center; background-color:#4877BA; padding:40px 20px; margin-right:0; margin-top:0; }
+  .cta .button.right { float:none!important; display:block; margin:0 auto; width:100%; }
+  .cta { height:auto;margin:40px 0; }
+  .button.radius.left-spacing { border-radius:0px; }
+  .cta { margin: 0 0 30px }
+
+  .row.page-content { margin-bottom:30px; }
+
+  .hero-page span.hero-headline { font-size:2.0em; margin:0; margin-top:25px;margin-bottom:5px; }
+  .hero-page .services-image { min-height:90px; }
+}
+
+@media only screen and (max-width: 767px) {
+  .row.offset-left { display:none; }
+  .footer-wrapper .inline-list > li { float:left; width:44%; }
+  .inline-list.sidebar-menu { margin-left:0; margin-bottom:0; }
+
+  .hero-page span.hero-headline { font-size:1.75em; margin:0; margin-top:23px;margin-bottom:5px; }
+  .hero-page span.hero-subhead { font-size:1.25em; margin:0; }
+
+  .inline-list.sidebar-menu { margin-top:10px; }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-slide span.hero-copy { width:90%; }
+  .hero-slide span.hero-headline { font-size:2.000em; }
+  .hero-slide span.hero-subhead { font-size:1.500em; }
+
+  .hero-page span { display:none; }
+  .hero-wrapper.internal-page { height:8px; }
+
+  .row.page-content { margin-top:40px; }
+}
+
+@media only screen and (max-width: 560px) {
+  .footer-wrapper { padding:0; }
+  .footer-wrapper div.small-6 { width:100%; margin:0;padding:0;  }
+  .footer-last { float:left!important; }
+  .footer-wrapper div div div div { width:100%!important;}
+  .inline-list.footer { display:none; }
+  .inline-list.footer.small-viewport { margin:0; width:100%; display:block; } 
+  .footer-wrapper .inline-list > li { width:100%; margin:0; padding:12px 0 12px 15px; }
+  .footer-wrapper .inline-list > li:hover { background-color:#51c2a2; color:#ffffff; }
+  .footer-wrapper .inline-list > li a:hover { color:#ffffff; text-decoration:none;  }
+  .footer-headline { display:none; }
+}
+
+@media only screen and (max-width: 482px) {
+
+  .hero-slide div.button { width:90%;  }
+  .hero-slide div.button.radius.left-spacing { margin-left:0px; }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+  .hero-slide span.hero-headline { font-size:1.500em; }
+  .hero-slide span.hero-subhead { font-size:1.250em; }
+
+  .cta .headline { font-size:1.45em; }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+  .hero-slide span.hero-headline { font-size:1.250em; margin-bottom:7px; }
+  .hero-slide span.hero-subhead { font-size:1.000em; }
+
+
+
+}
+
+

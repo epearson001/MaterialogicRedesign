@@ -1,0 +1,13 @@
+/* TEAM */
+	Web Designer: Eric Pearson
+	Contact: contact@epearson.me
+	Twitter: @mrericpearson
+	From: Saint Louis, Missouri, United States
+	
+/* SITE */
+	Url: http://materialogic.com
+	Published: TBD
+	Language: English
+	Doctype: HTML5
+	Made with: Html, Css, Javascript, Php
+	IDE: Sublime Text 2, Photoshop
